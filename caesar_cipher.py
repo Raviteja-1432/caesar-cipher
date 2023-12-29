@@ -138,6 +138,8 @@ def decryption(ciphertext,shift):
 		exit()
 	if shift != 'None':
 		for i in ciphertext:
+			if i.isdigit:
+				E = i
 			if i.isupper():
 				e = (L.index(i) - shift) % 26
 				E = L[e]
